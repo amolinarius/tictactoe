@@ -1,0 +1,27 @@
+{
+	"name": "tictactoe",
+	"version": "1.0.0",
+	"description": "A tictactoe in NodeJS with Socket.io",
+	"main": "main.js",
+	"type": "module",
+	"scripts": {
+		"start": "npx tailwindcss -i ./client/style.css -o ./client/minified.css --minify && node .",
+		"dev": "concurrently \"npx tailwindcss -i ./client/style.css -o ./client/minified.css --watch --minify\" \"nodemon .\""
+	},
+	"keywords": [
+		"tictactoe",
+		"nodejs"
+	],
+	"author": "galaxymiller",
+	"license": "CC-BY-NC-4.0",
+	"devDependencies": {
+		"concurrently": "^8.2.2",
+		"daisyui": "^4.12.2",
+		"nodemon": "^3.1.3",
+		"tailwindcss": "^3.4.3"
+	},
+	"dependencies": {
+		"express": "^4.19.2",
+		"socket.io": "^4.7.5"
+	}
+}

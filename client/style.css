@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* { font-family: 'Consolas' }
+html { @apply min-h-full }
+body { @apply flex justify-center items-center min-h-screen flex-col overflow-hidden }
+table {
+	@apply mt-4;
+	display: block !important;
+	width: 600px !important;
+	height: 600px;
+}
+table td {
+	@apply border-collapse;
+	width: 198px;
+	padding: 0 !important;
+	margin: 0 !important;
+	height: 198px;
+	border: 1px solid #ccc;
+	font-size: 200px;
+	text-align: center;
+	vertical-align: middle !important;
+}
